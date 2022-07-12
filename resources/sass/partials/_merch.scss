@@ -1,0 +1,26 @@
+#merch {
+    div{
+        background-color: blue;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #merch-list{
+            display: flex;
+            justify-content: space-around;
+            .merch-item {
+                display: flex;
+                list-style-type: none;
+
+                .link-merch{
+                    color: white;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -93,5 +99,64 @@ header ul li a.here {
 .comic-card a h4 {
   font-size: 24px;
   color: white;
+}
+
+#merch div {
+  background-color: blue;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#merch div #merch-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+#merch div #merch-list .merch-item {
+  display: flex;
+  list-style-type: none;
+}
+
+#merch div #merch-list .merch-item .link-merch {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer {
+  background-image: url("/img/footer-bg.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer #flex {
+  display: flex;
+}
+
+footer #flex ul {
+  margin-right: 50px;
+}
+
+footer #flex ul li {
+  list-style-type: none;
+}
+
+footer #flex ul li h1 {
+  color: white;
+}
+
+footer #flex ul li a {
+  text-decoration: none;
+  color: grey;
 }
 
