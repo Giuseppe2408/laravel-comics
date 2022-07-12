@@ -9,5 +9,7 @@
 </head>
 <body>
     @include('template.header')
+    @include('template.jumbo')
+    @include('template.comics')
 </body>
 </html>

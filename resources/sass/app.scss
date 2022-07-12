@@ -1,7 +1,6 @@
 //
-@import "~bootstrap/scss/bootstrap";
-body{
-    background-color: gold;
-}
 
-@import "partials/header"
+@import "partials/header";
+@import "partials/jumbotron";
+@import "partials/comicslist";
+@import "partials/comic"

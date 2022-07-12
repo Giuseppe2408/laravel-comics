@@ -1,0 +1,15 @@
+.comic-card{
+    flex-basis: 16%;
+    margin-bottom: 50px;
+    a{
+        text-decoration: none;
+        .comics {
+            max-width: 100%;            
+        }
+        h4{
+            font-size: 24px;
+            color: white;
+        }
+    }
+        
+}
