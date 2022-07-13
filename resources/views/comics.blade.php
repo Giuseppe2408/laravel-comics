@@ -1,8 +1,12 @@
 
 @extends('home')
+@section('pagetitle')
 @section('comicslist')
 
-    <section class="comic-list">
+
+
+    <main>ciao</main>
+    {{-- <section class="comic-list">
         @foreach ($arrComics as $comic)
         <div class="comic-card">
             <a href="">
@@ -16,6 +20,6 @@
 
         <button class="comic-button">
             <span>LOAD MORE</span> 
-        </button>       
-    </section>
+        </button>        
+    </section> --}}
 @endsection
