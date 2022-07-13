@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $arrComics = config('comics');
-    return view('home', ['arrComics' => $arrComics]);
+    return view('template.home', ['arrComics' => $arrComics]);
 })->name('home');
 
 
@@ -27,8 +27,8 @@ Route::get('/comic/{id}', function ($id) {
             break;
         }
     }
-    return view('comicview', [
+    return view('comics', [
         'pageTitle' => 'comic - descrizione',
         'comics' => $comics
     ]);
-})->name('comicview');
+})->name('comics');

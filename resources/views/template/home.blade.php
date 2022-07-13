@@ -8,10 +8,13 @@
     <link rel="stylesheet" href={{asset('css/app.css')}}>
 </head>
 <body>
-    @include('template.header')
-    @include('template.jumbo')
-    @yield('template.comics')
-    @include('template.merch')
-    @include('template.footer')
+    @include('header')
+    @include('jumbo')
+
+    @yield('pagecomic')
+
+    
+    @include('merch')
+    @include('footer')
 </body>
 </html>
