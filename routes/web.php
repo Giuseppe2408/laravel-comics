@@ -18,3 +18,17 @@ Route::get('/', function () {
     return view('home', ['arrComics' => $arrComics]);
 })->name('home');
 
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = null;
+    foreach (config('comics') as $value){
+        if ($value['id'] == $id) {
+            $comics = $value;
+            break;
+        }
+    }
+    return view('comicview', [
+        'pageTitle' => 'comic - descrizione',
+        'comics' => $comics
+    ]);
+})->name('comicview');

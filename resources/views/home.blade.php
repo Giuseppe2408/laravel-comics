@@ -11,6 +11,7 @@
     @include('template.header')
     @include('template.jumbo')
     @include('template.comics')
+    @include('template.comicview')
     @include('template.merch')
     @include('template.footer')
 </body>
