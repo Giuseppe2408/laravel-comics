@@ -1,7 +1,7 @@
 
 @extends('home')
 @section('pagetitle')
-@section('comicslist')
+@section('pagecomic')
 
 
 
