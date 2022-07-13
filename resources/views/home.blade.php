@@ -10,8 +10,7 @@
 <body>
     @include('template.header')
     @include('template.jumbo')
-    @include('template.comics')
-    @include('template.comicview')
+    @yield('template.comics')
     @include('template.merch')
     @include('template.footer')
 </body>
