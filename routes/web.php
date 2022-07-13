@@ -15,24 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $arrComics = config('comics');
-    return view('template.home', 
+    return view('comics', 
     ['arrComics' => $arrComics]);
-})->name('template.home');
+})->name('comics');
 
-Route::get('/comics', function () {
-    return view('comics'); 
-})->name('home');
 
-// Route::get('/comic/{id}', function ($id) {
-//     $comics = null;
-//     foreach (config('comics') as $value){
-//         if ($value['id'] == $id) {
-//             $comics = $value;
-//             break;
-//         }
-//     }
-//     return view('comics', [
-//         'pageTitle' => 'comic - descrizione',
-//         'comics' => $comics
-//     ]);
-// })->name('comics');
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = null;
+    foreach (config('comics') as $value){
+        if ($value['id'] == $id) {
+            $comics = $value;
+            break;
+        }
+    }
+    return view('comic', [
+        'pageTitle' => 'comic - descrizione',
+        'comics' => $comics
+    ]);
+})->name('comic');
