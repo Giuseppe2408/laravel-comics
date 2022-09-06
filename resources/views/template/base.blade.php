@@ -10,10 +10,7 @@
 <body>
     @include('header')
     @include('jumbo')
-
     @yield('pagecomic')
-
-    
     @include('merch')
     @include('footer')
 </body>

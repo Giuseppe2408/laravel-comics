@@ -22,15 +22,16 @@ Route::get('/', function () {
 
 
 Route::get('/comic/{id}', function ($id) {
-    $comics = null;
-    foreach (config('comics') as $value){
-        if ($value['id'] == $id) {
-            $comics = $value;
+    $comic = null;
+    $arrComics = config('comics');
+    foreach ($arrComics as $comic){
+        if ($comic['id'] == $id) {
+            $comic = $comic;
             break;
         }
     }
     return view('comic', [
         'pageTitle' => 'comic - descrizione',
-        'comics' => $comics
+        'comic' => $comic
     ]);
 })->name('comic');
